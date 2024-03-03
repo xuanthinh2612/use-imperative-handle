@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Video from './Video';
+import Video from './videos/Video';
 import { useRef } from 'react';
+import Heading from './components/heading/Index';
 
 function App() {
   const videoRef = useRef()
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="App m-5">
+      <Heading></Heading>
       <div>
         {/* Do thang video da dung forwardRef nen co the nhan prop ref truyen vao nhu mot component cua DOM */}
         <Video ref={videoRef}></Video> 

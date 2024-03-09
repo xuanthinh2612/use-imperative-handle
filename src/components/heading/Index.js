@@ -2,6 +2,8 @@ import clsx from 'clsx'
 import style from './Heading.module.css'
 import { useState } from 'react'
 
+
+// Bai thuc hanh su dung css module va thu vien clsx
 function Heading() {
 
     const [showBtn, setShowBtn] = useState(true)
